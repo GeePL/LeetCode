@@ -23,7 +23,6 @@ public class TakeTurnsPrint2 {
                     }catch (Exception e){
                         e.printStackTrace();
                     }
-
                 }
             }
         }

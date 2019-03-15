@@ -1,10 +1,10 @@
 package multiThread;
 
-public class TakeTurnsPrint implements Runnable{
+public class TakeTurnsPrint3 implements Runnable{
     private final Object prev ;
     private final Object self ;
     private String name;
-    private TakeTurnsPrint(String name, Object prev, Object self){
+    private TakeTurnsPrint3(String name, Object prev, Object self){
         this.name = name;
         this.prev = prev;
         this.self = self;
@@ -23,6 +23,7 @@ public class TakeTurnsPrint implements Runnable{
                     self.notify();
                 }
                 // synchronized语句块结束，释放self
+                prev.notify();
                 try{
                     // 主动释放prev， 同时本线程进入休眠，直到其他线程唤醒
                     prev.wait();
@@ -39,9 +40,9 @@ public class TakeTurnsPrint implements Runnable{
         Object a = new Object();
         Object b = new Object();
         Object c = new Object();
-        TakeTurnsPrint takeTurnsPrint1 = new TakeTurnsPrint("A", c, a);
-        TakeTurnsPrint takeTurnsPrint2 = new TakeTurnsPrint("B", a, b);
-        TakeTurnsPrint takeTurnsPrint3 = new TakeTurnsPrint("C", b, c);
+        TakeTurnsPrint3 takeTurnsPrint1 = new TakeTurnsPrint3("A", c, a);
+        TakeTurnsPrint3 takeTurnsPrint2 = new TakeTurnsPrint3("B", a, b);
+        TakeTurnsPrint3 takeTurnsPrint3 = new TakeTurnsPrint3("C", b, c);
         new Thread(takeTurnsPrint1).start();
         try{
             Thread.sleep(1000);
