@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b87a0aa5-a5a3-4f17-9551-d2fec1ebb270" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/multiThread/ProducerComsumer02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeetCode.iws" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/multiThread/TakeTurnsPrint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/multiThread/TakeTurnsPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/multiThread/TakeTurnsPrint3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/multiThread/TakeTurnsPrint2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/multiThread/TakeTurnsPrint2.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +19,7 @@
           <entry key="iml" value="1" />
           <entry key="ipr" value="1" />
           <entry key="iws" value="1" />
-          <entry key="java" value="6" />
+          <entry key="java" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -29,19 +27,19 @@
           <entry key="IDEA_MODULE" value="1" />
           <entry key="IDEA_PROJECT" value="1" />
           <entry key="IDEA_WORKSPACE" value="1" />
-          <entry key="JAVA" value="6" />
+          <entry key="JAVA" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="3" />
-          <entry key="java" value="2201" />
+          <entry key="java" value="2855" />
           <entry key="txt" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2201" />
+          <entry key="JAVA" value="2855" />
           <entry key="PLAIN_TEXT" value="24" />
         </counts>
       </usages-collector>
@@ -87,6 +85,28 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/multiThread/ProducerComsumer02.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="class#Producer#0;class#ProducerComsumer02#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/concurrent/locks/Lock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3116">
+              <caret line="166" column="17" selection-start-line="166" selection-start-column="17" selection-end-line="166" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Thread.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -103,17 +123,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/multiThread/TakeTurnsPrint3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
+            <state relative-caret-position="94">
               <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/multiThread/ThreadTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+            <state relative-caret-position="646">
+              <caret line="34" column="28" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -152,6 +172,8 @@
         <option value="$PROJECT_DIR$/src/multiThread/TakeTurnsPrint.java" />
         <option value="$PROJECT_DIR$/src/multiThread/TakeTurnsPrint2.java" />
         <option value="$PROJECT_DIR$/src/multiThread/TakeTurnsPrint3.java" />
+        <option value="$PROJECT_DIR$/src/multiThread/ThreadTest.java" />
+        <option value="$PROJECT_DIR$/src/multiThread/ProducerComsumer02.java" />
       </list>
     </option>
   </component>
@@ -233,16 +255,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ThreadTest">
-    <configuration name="MonotonousStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MonotonousStack" />
+  <component name="RunManager" selected="Application.ProducerComsumer02">
+    <configuration name="ProducerComsumer01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="multiThread.ProducerComsumer01" />
       <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="multiThread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProducerComsumer01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="multiThread.ProducerComsumer01" />
+    <configuration name="ProducerComsumer02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="multiThread.ProducerComsumer02" />
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -294,19 +322,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MonotonousStack" />
       <item itemvalue="Application.ProducerComsumer01" />
       <item itemvalue="Application.TakeTurnsPrint3" />
       <item itemvalue="Application.TakeTurnsPrint2" />
       <item itemvalue="Application.ThreadTest" />
+      <item itemvalue="Application.ProducerComsumer02" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProducerComsumer02" />
         <item itemvalue="Application.ThreadTest" />
         <item itemvalue="Application.TakeTurnsPrint3" />
         <item itemvalue="Application.TakeTurnsPrint2" />
         <item itemvalue="Application.ProducerComsumer01" />
-        <item itemvalue="Application.MonotonousStack" />
       </list>
     </recent_temporary>
   </component>
@@ -323,7 +351,7 @@
       <workItem from="1552541582310" duration="614000" />
       <workItem from="1552542303108" duration="645000" />
       <workItem from="1552542978164" duration="1756000" />
-      <workItem from="1552628562828" duration="9430000" />
+      <workItem from="1552628562828" duration="10966000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1552542465530</created>
@@ -343,7 +371,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11751000" />
+    <option name="totallyTimeSpent" value="13287000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="-7" width="1295" height="695" extended-state="6" />
@@ -362,7 +390,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32740214" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32740214" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32740214" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3291815" />
@@ -453,13 +481,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/multiThread/ProducerComsumer01.java">
+    <entry file="file://$PROJECT_DIR$/src/multiThread/ThreadTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-          <folding>
-            <element signature="class#Consumer#0;class#ProducerComsumer01#0" />
-          </folding>
+        <state relative-caret-position="646">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -476,15 +501,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/multiThread/TakeTurnsPrint3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
+        <state relative-caret-position="94">
           <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/multiThread/ThreadTest.java">
+    <entry file="file://$PROJECT_DIR$/src/multiThread/ProducerComsumer01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        <state relative-caret-position="380">
+          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <folding>
+            <element signature="class#Consumer#0;class#ProducerComsumer01#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/concurrent/locks/Lock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3116">
+          <caret line="166" column="17" selection-start-line="166" selection-start-column="17" selection-end-line="166" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/multiThread/ProducerComsumer02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#Producer#0;class#ProducerComsumer02#0" />
+          </folding>
         </state>
       </provider>
     </entry>
