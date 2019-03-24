@@ -1,5 +1,8 @@
 package multiThread;
 
+/**
+ * Use synchronized
+ */
 public class ProducerComsumer01 {
     private static final String LOCK = "lock";
     private static final Integer FULL = 10;

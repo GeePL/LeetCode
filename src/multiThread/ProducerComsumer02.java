@@ -88,6 +88,4 @@ public class ProducerComsumer02 {
         new Thread(test2.new Producer()).start();
         new Thread(test2.new Consumer()).start();
     }
-
-
 }
