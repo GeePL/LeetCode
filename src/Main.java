@@ -3,34 +3,44 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class Main{
     public static void main(String[] args){
-        Map<Integer, Integer> map = new ConcurrentHashMap<>();
-        //canner sc = new Scanner(System.in);
-        int N = 8;
-        //sc.nextLine();
-        int[] a = {1,1, 3, 4, 5, 6, 7, 8};
-        Arrays.sort(a);
-        int res = 0;
-        if(N<=2){
-            System.out.println(res);
+        String str = "/a/./b/../../c/";
+        String[] strs = str.split("/+");
+        System.out.println(strs.length);
+        for(String s:strs){
+            System.out.println(s);
+        }
+    }
+    public static List<List<Integer>> permutation(List<Integer> input){
+        List<List<Integer>> res = new ArrayList<>();
+        backtrack(res, new ArrayList<>(), input, 0);
+        return res;
+    }
+    private static void backtrack(List<List<Integer>> res, List<Integer> tmp, List<Integer> input, int start){
+        if(tmp.size()>1){
+            res.add(new ArrayList<>(tmp));
             return;
         }
-        int index = 0;
-        for(int i=0;i<N;i++){
-            if(i<1 || a[i]>a[index-1])
-                a[index++]=a[i];
+        for(int i=start;i<tmp.size();i++){
+            tmp.add(i);
+            backtrack(res, tmp, input,start+1);
+            tmp.remove(tmp.size()-1);
         }
-        for(int i=0;i<index-2;i++){
-            for(int j=i+1;j<index-1;j++){
-                for(int k=j+1;k<index;k++){
-                    if(helper(a[k],a[j])==1 && helper(a[k],a[i])==1)
-                        if(helper(a[j],a[i])==1)
-                            res++;
-                }
-            }
+    }
+    public static int coinChange(int[] coins, int amount) {
+        if(amount==0)return 0;
+        Arrays.sort(coins);
+        int count = 0;
+        int index = coins.length-1;
+        while(amount>0){
+            count += amount/coins[index];
+            amount = amount%coins[index];
+            index--;
+            if(amount==0)
+                return count;
+            if(index==-1)
+                break;
         }
-
-        System.out.println(135*246);
-        System.out.println(123*456);
+        return -1;
     }
 
     public static int helper(int x, int y){
@@ -91,13 +101,13 @@ public class Main{
     public static int[][] merge(int[][] matrix){
         List<Map.Entry<Integer, Integer>> list = new ArrayList<>();
         for(int i=0;i<matrix.length;i++){
-            Map.Entry<Integer, Integer> map = new AbstractMap.SimpleEntry<>(matrix[i][0],matrix[i][1]);
-            while(i<matrix.length-1 && matrix[i+1][0]<=map.getValue()){
-                if(matrix[i+1][1]>map.getValue())
-                    map.setValue(matrix[i+1][1]);
+            Map.Entry<Integer, Integer> entry = new AbstractMap.SimpleEntry<>(matrix[i][0],matrix[i][1]);
+            while(i<matrix.length-1 && matrix[i+1][0]<=entry.getValue()){
+                if(matrix[i+1][1]>entry.getValue())
+                    entry.setValue(matrix[i+1][1]);
                 i++;
             }
-            list.add(map);
+            list.add(entry);
         }
         int[][] mat = new int[list.size()][2];
         for(int i=0;i<mat.length;i++){
@@ -176,7 +186,7 @@ public class Main{
             for(Integer i:delList){
                 lowerList.remove(i-tmp);
                 upperList.remove(i-tmp);
-                tmp=i+1;
+                tmp++;
             }
             res.add(result.toString());
         }
@@ -196,4 +206,13 @@ public class Main{
         return null;
     }
 
+}
+
+class MyComparator implements Comparator{
+    @Override
+    public int compare(Object o1, Object o2) {
+        int first = (int)o1;
+        int second = (int)o2;
+        return first - second;
+    }
 }

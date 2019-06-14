@@ -20,9 +20,7 @@ public class GCD {
     }
     public static int ThreeGC(int a, int b, int c) {
         int i=a;
-        for(;(a%i!=0)|(b%i!=0)|(c%i!=0);i--) {
-
-        }
+        while((a%i!=0)|(b%i!=0)|(c%i!=0))i--;
         return i;
     }
 }
